@@ -1,0 +1,187 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+
+.login-form{
+    margin-top: 15px;
+margin-right: 50px;
+}
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #383d41;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        height: 114%;
+        width: 40%;
+        position: absolute;
+        z-index:-9;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 35%;
+        margin-bottom: 5%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+
+@media screen and (min-width: 1020px){
+    .sidenav{
+        height: 163%;
+
+    }
+}
+
+
+@media screen and (min-height: 1024px){
+    .sidenav{
+        height: 94%;
+
+    }
+}
+
+
+@media screen and (min-height: 1366px){
+    .sidenav{
+        height: 71%;
+
+    }
+}
+
+
+@media screen and (min-height: 600px){
+    .sidenav{
+        height: 147% ;
+
+    }
+}
+
+@media screen and (min-height: 800px){
+    .sidenav{
+        height: 116% ;
+
+    }
+}
+
+
+
+@media screen and (min-height: 950px){
+    .sidenav{
+        height: 90% ;
+
+    }
+}
+
+
+
+@media screen and (min-height: 1280px ){
+    .sidenav{
+        height: 74% ;
+
+    }
+}
+
+
+@media screen and (min-height: 1350px ){
+    .sidenav{
+        height: 50% ;
+
+    }
+}
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+    position: relative;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+    position: relative;
+
+}
+
+.btn-black{
+    background-color: #383d41 !important;
+    color: #fff;
+    position: relative;
+
+}
+
+
+
+.main-nav a {
+    color: #383d41 !important;
+}
+
+.mb-4{
+    margin-top: 12%;
+    margin-right: 5%;
+}
+
+
+
+input[type=text]:focus,input[type=email]:focus ,input[type=number]:focus,
+input[type=select]:focus,input[type=password]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #ff6700;
+
+  border: 1px solid #ff6700;
+-moz-box-shadow:    inset 0 0 10px  #ff6700;
+   -webkit-box-shadow: inset 0 0 10px  #ff6700;
+   box-shadow:         inset 0 0 5px  #ff6700;}
