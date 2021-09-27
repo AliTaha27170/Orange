@@ -41,6 +41,13 @@ Route::group([
         return redirect(route('voyager.login'));
     })->name('login');
 
+
+    Route::get('/adham' ,function ()
+    {
+       return view('adham');
+    })->name('adham');
+
+
     Route::post('register', [AuthController::class , 'Register' ])->name('RegisterPost');
 
     Route::get('/contact', [PageController::class , 'contact']  )->name('contact');
