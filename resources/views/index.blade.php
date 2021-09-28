@@ -284,21 +284,21 @@
 
 
 
-                <div class="col-md-4 col-6">
+                <div class="col-md-4 col-4 mt-md-0">
                     <div class="counter">
                         <div class="timer count-title count-number" data-to="1139" data-speed="1500"></div>
                         <p class="count-text">{{ __('main_page.a95') }}</p>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 mt-md-0 mt-4">
+                <div class="col-md-4 col-4 mt-md-0">
                     <div class="counter">
                         <div class="timer count-title count-number" data-to="7600" data-speed="1500"></div>
                         <p class="count-text">{{ __('main_page.a96') }}</p>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 mt-md-0 mt-4">
+                <div class="col-md-4 col-4 mt-md-0">
                     <div class="counter border-right-0">
                         <div class="timer count-title count-number" data-to="47" data-speed="1500"></div>
                         <p class="count-text">{{ __('main_page.a97') }}</p>
@@ -440,7 +440,7 @@
         </div>
         <div class="row team-row mt-md-5 mt-4 justify-content-center">
 
-                                            <div class="col-lg-3 col-6 team-wrap">
+                                            <div class="col-lg-3 col-4 team-wrap">
                 <div class="team-member text-center">
                     <div class="team-img">
                         <a href="https://t.co/gJ2CY7FjrM?amp=1" >
@@ -460,7 +460,7 @@
             </div>
                             <!-- end team member -->
 
-                                            <div class="col-lg-3 col-6 team-wrap">
+                                            <div class="col-lg-3 col-4 team-wrap">
                 <div class="team-member text-center">
                     <div class="team-img">
                         <a href="https://www.instagram.com/itsfuture_garden/" >
@@ -478,7 +478,7 @@
             </div>
             <!-- end team member -->
 
-                                            <div class="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
+                                            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
                 <div class="team-member last text-center">
                     <div class="team-img">
                         <a href="https://technksa.com/" >
@@ -498,7 +498,7 @@
             </div>
             <!-- end team member -->
 
-                                            <div class="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
+                                            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
                 <div class="team-member last text-center">
                     <div class="team-img">
                         <a href="https://www.instagram.com/aq_design_/?igshid=mq3c5qymj33u" >
@@ -521,7 +521,7 @@
             <!-- end team member -->
 
 
-            <div class="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
+            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
                 <div class="team-member last text-center">
                     <div class="team-img">
 
@@ -542,7 +542,7 @@
             <!-- end team member -->
 
 
-            <div class="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
+            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
                 <div class="team-member last text-center">
                     <div class="team-img">
                         <a href="https://mazaya.monshaat.gov.sa/" >
@@ -573,9 +573,14 @@
 
 
 <style>
-.team-member{
+    .team-member{
     height:355px;
 }
+    @media (max-width: 991px) {
+        .team-member{
+    height:auto;
+    }
+    }
 </style>
 
 <section>

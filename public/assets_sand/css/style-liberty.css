@@ -14180,6 +14180,20 @@ h4.abt-right-text {
     margin-right: 2px;
   }
 }
+@media (max-width: 991px) {
+  .socials 
+  {
+    display:none;
+  }
+  .team-member p
+  {
+    display : none ;
+  }
+  .team-member
+  {
+    height : auto ;
+  }
+}
 
 /* //team */
 
