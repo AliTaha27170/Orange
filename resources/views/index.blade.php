@@ -1,6 +1,8 @@
 @extends('include.app')
 @section('main')
-
+<!-- Slider CDNs -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- End Of Slider CDNs -->
 <!-- homepage banner section -->
 
 <section>
@@ -33,7 +35,7 @@
                     </h3>
                     <p>{{ __('main_page.a7') }}</p>
                     <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
-                        <a class="btn btn-style" href="{{route('register_now')}}">
+                        <a id="Join" class="btn btn-style" href="{{route('register_now')}}">
                             {{ __('main_page.a10') }}</a>
 
                             <a class="btn btn-style" href="#_">
@@ -122,10 +124,12 @@
 
 <section>
 </section>
+<div class="Slider">
 
+<!------------------------------------------------------------->
 <section class="w3l-aboutblock pt-4 pb-5">
     <div class="container pb-md-5 pb-sm-4 HPAbout">
-        <div class="row ">
+        <div class="row">
             <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
                 <img class="img-fluid img-responsive" src="../../../../../../../../../../../../../assets_sand/images/about.png" alt=" ">
             </div>
@@ -135,10 +139,47 @@
                 <h3 class="title-style">{{ __('main_page.a119') }}</h3>
                 <p class="ab-text mt-4 pt-lg-2"></p>
                 <p class="mt-4">{{ __('main_page.a91') }}</p>
-            </div>
+           </div>
         </div>
     </div>
 </section>
+
+<!------------------------------------------------------------->
+
+<section class="w3l-aboutblock pt-4 pb-5">
+    <div class="container pb-md-5 pb-sm-4 HPAbout">
+        <div class="row">
+            <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
+                <img class="img-fluid img-responsive" src="../../../../../../../../../../../../../assets_sand/images/about.png" alt=" ">
+            </div>
+            <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first rt">
+                <h3 class="text-bgs mb-md-3 mb-2">{{ __('main_page.a117') }} <span>{{ __('main_page.a118') }}</span>
+                </h3>
+                <h3 class="title-style">{{ __('main_page.a119') }}</h3>
+                <p class="ab-text mt-4 pt-lg-2"></p>
+                <p class="mt-4">{{ __('main_page.a91') }}</p>
+           </div>
+        </div>
+    </div>
+</section>
+
+<section class="w3l-aboutblock pt-4 pb-5">
+    <div class="container pb-md-5 pb-sm-4 HPAbout">
+        <div class="row">
+            <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
+                <img class="img-fluid img-responsive" src="../../../../../../../../../../../../../assets_sand/images/about.png" alt=" ">
+            </div>
+            <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first rt">
+                <h3 class="text-bgs mb-md-3 mb-2">{{ __('main_page.a117') }} <span>{{ __('main_page.a118') }}</span>
+                </h3>
+                <h3 class="title-style">{{ __('main_page.a119') }}</h3>
+                <p class="ab-text mt-4 pt-lg-2"></p>
+                <p class="mt-4">{{ __('main_page.a91') }}</p>
+           </div>
+        </div>
+    </div>
+</section>
+</div>
 
 <section>
 </section>
@@ -238,8 +279,8 @@
     </div>
 </section>
 @endif
-        <div class="w3-stats mt-5 pt-4">
-            <div class="row text-center justify-content-center rt">
+        <div class="w3-stats pt-4">
+            <div id="Lights_margin" class="row text-center justify-content-center rt">
 
 
 
@@ -285,7 +326,7 @@
 <section class="w3l-content-sec py-5">
     <style>
         .btn-style{
-            margin: 5px;
+            margin: 6px;
 
         }
         .w3l-content-sec {
@@ -542,9 +583,50 @@
 
 <!-- //HomePage Cover Grids Section -->
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$('.Slider').slick(
+                    {
+                    slidesToShow : 1 ,
+                    slidesToScroll : 1 ,
+                    dots : false ,
+                    arrows : false ,
+                    autoplay : true ,
+                    autoplayspeed : 2000 ,
+                    infinite : true ,
+                    responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                    slidesToShow : 1 ,
+                    slidesToScroll : 1 ,
+                    dots : false ,
+                    arrows : false ,
+                    autoplay : true ,
+                    autoplayspeed : 2000 ,
+                    infinite : true ,
+                    }
+                    },
 
-
-
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+                    }
+                );
+</script>
 {{-- EVENTS --}}
 @include('include.events')
 

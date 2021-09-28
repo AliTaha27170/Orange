@@ -778,7 +778,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
                 </div>
             </div>
 
-            <div class="w3-stats mt-5 pt-4">
+            <div class="w3-stats pt-4">
                 <div class="row text-center justify-content-center rt">
 
 

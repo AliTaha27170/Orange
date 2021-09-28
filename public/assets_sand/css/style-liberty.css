@@ -11181,6 +11181,13 @@ p.white {
 .radius-image {
   border-radius: var(--border-radius);
 }
+@media (max-width: 768px) {
+  .radius-image
+  {
+    max-width : 70%;
+  }
+
+}
 
 .radius-image-full {
   border-radius: var(--border-radius-full);
@@ -12492,6 +12499,16 @@ h3.title-main:after {
   -o-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px) {
+  .img-fluid
+  {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
+  }
+}
+
 
 .w3l-banner h3 {
   font-size: 54px;
@@ -12514,6 +12531,7 @@ h3.title-main:after {
   .w3l-banner h3 {
     font-size: 45px;
     line-height: 55px;
+    text-align: center;
   }
 
   .w3l-banner h3 span.d-block-res {
@@ -12610,7 +12628,7 @@ img.img-fluid.img-dark-color {
 
 @media (max-width: 768px) {
   h3.title-style {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 40px;
   }
 
@@ -12788,6 +12806,7 @@ p.count-text {
 
   .counter {
     border-right: none;
+    padding : 1em;
   }
 }
 
@@ -15560,4 +15579,8 @@ option
         }
         .area-box{
             margin-top: 35px;
+        }
+        #Lights_margin
+        {
+          margin : 0 0 75px 0;
         }

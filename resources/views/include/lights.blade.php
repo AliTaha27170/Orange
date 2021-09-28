@@ -13,7 +13,7 @@
     </style>
 
     <div class="container py-md-5 py-4 HomePageServices">
-        <div class="title-main text-center mx-auto mb-5" style="max-width:600px;">
+        <div class="title-main text-center mx-auto" style="max-width:600px;">
             <h2 class="mt-2 ">{{ __('main_page.a2') }}</h2>
         </div>
         <div class="row pt-md-4 justify-content-center rt">

@@ -102,7 +102,8 @@ $mzaya = systing::find(1)->mzaya;
 
         }
 
-        @endifbody {
+        @endif
+        body {
             overflow-x: hidden;
         }
 
