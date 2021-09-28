@@ -12617,7 +12617,7 @@ img.img-fluid.img-dark-color {
 
 @media (max-width: 991px) {
   .left-wthree-img img {
-    width: 500px;
+    width: 80%;
     margin: auto;
   }
 

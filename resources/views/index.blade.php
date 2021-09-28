@@ -83,7 +83,7 @@
 
              @foreach ($in_sand as $item)
 
-             <div class="col-lg-4 col-sm-6 feature-body mt-lg-0 mt-5">
+             <div class="col-lg-4 col-4 feature-body mt-lg-0 mt-5">
                 <div class="feature-icon">
                 <i class="fas " aria-hidden="true" style="background:#fff0f5">
                     <img src="{{Voyager::image($item->image)}} " class="in">
