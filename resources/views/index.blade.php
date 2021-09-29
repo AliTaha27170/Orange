@@ -68,10 +68,8 @@
 
 
 
-
-
 <!--  في سند -->
-<section class="w3l-feature-8 text-center bg rt">
+<section id="services" class="w3l-feature-8 text-center bg rt section-bg">
 
     <div class="features-main py-5">
         <div class="container py-md-5 py-4 AboutPageGrids">
@@ -81,26 +79,25 @@
             </center>
             <div class="row justify-content-center">
 
-             @foreach ($in_sand as $item)
 
-             <div class="col-lg-4 col-4 feature-body mt-lg-0 mt-5">
-                <div class="feature-icon">
-                <i class="fas " aria-hidden="true" style="background:#fff0f5">
-                    <img src="{{Voyager::image($item->image)}} " class="in">
-                    </i>
-                </div>
-                <div class="feature-info">
-                    <a href="#url">
-                        <h3 class="feature-titel mb-3"> {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }} </h3>
-                    </a>
-                    <p> </p>
-                    <a href="#url" class="feature-link">
-                    </a>
-                </div>
-            </div>
+                @foreach ($in_sand as $item)
 
 
-             @endforeach
+                <div class="col-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="box">
+                      <div  >
+                        </div>
+                        <img id="trtr" src="{{Voyager::image($item->image)}} " alt="">
+                      <h4 class="title">{{ $item['title_'.LaravelLocalization::getCurrentLocale()] }}</h4>
+                    </div>
+                  </div>
+
+
+
+
+
+                 @endforeach
+
 
 
             </div>
@@ -112,6 +109,7 @@
 
 
 <!-- انتهى في سند -->
+
 
 
 
@@ -635,6 +633,99 @@ $('.Slider').slick(
 {{-- EVENTS --}}
 @include('include.events')
 
+
+
+
+<style>
+
+
+
+    /* Services Section
+    ظپظٹ ط³ظ†ط¯
+    --------------------------------*/
+
+    #services {
+      padding:  0px 0px 90px 0px;
+        background-color: #ece8e5;
+    }
+
+    #services .box {
+        height: 210px ;
+        width: 210px ;
+      border-radius: 50% ;
+      position: relative;
+      overflow: hidden;
+      border-radius: 300px;
+        /*margin: 0 10px 40px 10px;*/
+      box-shadow: 0 20px 29px 0 rgba(25, 64, 82, 0.1);
+      background: #ece8e5;
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+    }
+
+    #services .box:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    /*-----------------------------------ط§ط¨ط­ط°ظپ ط°ظٹ ظ…ط§ظ„ظ‡ ط¯ط§ط¹ظٹ ط§ظ„ط§ظٹظ‚ظˆظ†ط§طھ */
+    #services .icon {
+
+      padding-top: 12px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+
+    #trtr {
+      width: 142px;
+      margin: 4px 1px 2px 10px;
+      height: auto;
+      font-size: 36px;
+      line-height: 1;
+
+    }
+
+    #services .title {
+      font-weight: 700;
+      font-size: 18px;
+          color: #000000;
+        text-decoration: none;
+        font-family: "JF Flat";
+    }
+
+
+    #services .box:hover .title  {
+      color: #aa805f;
+    }
+
+    #services .description {
+      font-size: 14px;
+      line-height: 28px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+
+
+    @media(max-width:856px){
+      #services .box{
+       width: 150px !important;
+      }
+    }
+
+
+
+    @media(min-width:856px){
+      #services .box{
+          margin-right: 84px;
+
+      }
+    }
+
+
+  </style>
 
 
 
