@@ -69,7 +69,7 @@
 
 
 <!--  في سند -->
-<section id="services" class="w3l-feature-8 text-center bg rt section-bg">
+<section id="services" class="w3l-feature-8 text-center bg  section-bg">
 
     <div class="features-main py-5">
         <div class="container py-md-5 py-4 AboutPageGrids">
@@ -83,7 +83,8 @@
                 @foreach ($in_sand as $item)
 
 
-                <div class="col-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+
+                  <div class="col-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                     <div class="box">
                       <div  >
                         </div>
@@ -124,63 +125,34 @@
 </section>
 <div class="Slider">
 
-<!------------------------------------------------------------->
-<section class="w3l-aboutblock pt-4 pb-5">
-    <div class="container pb-md-5 pb-sm-4 HPAbout">
-        <div class="row">
-            <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
-                <img class="img-fluid img-responsive" src="../../../../../../../../../../../../../assets_sand/images/about.png" alt=" ">
-            </div>
-            <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first rt">
-                <h3 class="text-bgs mb-md-3 mb-2">{{ __('main_page.a117') }} <span>{{ __('main_page.a118') }}</span>
-                </h3>
-                <h3 class="title-style">{{ __('main_page.a119') }}</h3>
-                <p class="ab-text mt-4 pt-lg-2"></p>
-                <p class="mt-4">{{ __('main_page.a91') }}</p>
-           </div>
-        </div>
-    </div>
-</section>
+    @foreach ($visits as $item)
 
 <!------------------------------------------------------------->
-
 <section class="w3l-aboutblock pt-4 pb-5">
     <div class="container pb-md-5 pb-sm-4 HPAbout">
         <div class="row">
             <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
-                <img class="img-fluid img-responsive" src="../../../../../../../../../../../../../assets_sand/images/about.png" alt=" ">
+                <img class="img-fluid img-responsive" src="{{Voyager::image($item->image)}}" alt=" ">
             </div>
             <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first rt">
-                <h3 class="text-bgs mb-md-3 mb-2">{{ __('main_page.a117') }} <span>{{ __('main_page.a118') }}</span>
+                <h3 class="text-bgs mb-md-3 mb-2"> {{ $item['word1_'.LaravelLocalization::getCurrentLocale()] }}<span>{{ $item['word2_'.LaravelLocalization::getCurrentLocale()] }}</span>
                 </h3>
-                <h3 class="title-style">{{ __('main_page.a119') }}</h3>
+                <h3 class="title-style">{{ $item['title_'.LaravelLocalization::getCurrentLocale()] }}</h3>
                 <p class="ab-text mt-4 pt-lg-2"></p>
-                <p class="mt-4">{{ __('main_page.a91') }}</p>
+                <p class="mt-4">{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</p>
            </div>
         </div>
     </div>
 </section>
 
-<section class="w3l-aboutblock pt-4 pb-5">
-    <div class="container pb-md-5 pb-sm-4 HPAbout">
-        <div class="row">
-            <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
-                <img class="img-fluid img-responsive" src="../../../../../../../../../../../../../assets_sand/images/about.png" alt=" ">
-            </div>
-            <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first rt">
-                <h3 class="text-bgs mb-md-3 mb-2">{{ __('main_page.a117') }} <span>{{ __('main_page.a118') }}</span>
-                </h3>
-                <h3 class="title-style">{{ __('main_page.a119') }}</h3>
-                <p class="ab-text mt-4 pt-lg-2"></p>
-                <p class="mt-4">{{ __('main_page.a91') }}</p>
-           </div>
-        </div>
-    </div>
-</section>
+<!------------------------------------------------------------->
+@endforeach
+
+
+
+
 </div>
 
-<section>
-</section>
 
 <!-- homepage about section -->
 
@@ -227,55 +199,6 @@
         </div>
 
 
-
-<!--الأسئلة الشائعة  -->
-
-
-<section class="w3l-clients py-5 mb-5 mt-4" id="ques">
-    <div class="container py-md-5 py-4 HomePageTestimonials">
-        <div class="title-main text-center mx-auto mb-5" style="max-width:600px;">
-            <p class="mt-2">    {{ __('main_page.a147') }}</p>
-
-        </div>
-        <div id="owl-demo2" class="owl-carousel  owl-theme mt-4 py-md-2 mb-md-4">
-
-            <div class="item rt">
-                <div class="testimonial-content">
-                    <div class="testimonial">
-                            <h4>    {{ __('main_page.a77') }} <br></h4>
-                            <p>    {{ __('main_page.a78') }}</p>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="item rt">
-                <div class="testimonial-content">
-                    <div class="testimonial">
-                            <h4>    {{ __('main_page.a79') }} <br></h4>
-                            <p>    {{ __('main_page.a80') }}</p>
-
-                    </div>
-
-                </div>
-            </div>
-
-                        <div class="item rt">
-                <div class="testimonial-content">
-                    <div class="testimonial">
-                            <h4>    {{ __('main_page.a81') }} <br></h4>
-                            <p>    {{ __('main_page.a82') }}</p>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
 @endif
         <div class="w3-stats pt-4">
             <div id="Lights_margin" class="row text-center justify-content-center rt">
@@ -318,8 +241,6 @@
 
 <!-- HomePage Cover Section -->
 
-<section>
-</section>
 
 <section class="w3l-content-sec py-5">
     <style>
@@ -423,6 +344,10 @@
 
 
 
+{{-- EVENTS --}}
+@include('include.events')
+
+
 
 
 
@@ -437,126 +362,29 @@
             <h3 class="title-style "> {{ __('main_page.a101') }}   <br>   <br>             </h3>
         </div>
         <div class="row team-row mt-md-5 mt-4 justify-content-center">
-
-                                            <div class="col-lg-3 col-4 team-wrap">
-                <div class="team-member text-center">
-                    <div class="team-img">
-                        <a href="https://t.co/gJ2CY7FjrM?amp=1" >
-                        <img src="../../images/n1.png" alt="" class="radius-image">
-                        </a>
-                    </div>
-                    <a class="team-title"> <br><p>
-                        {{ __('main_page.a102') }}</p></a>
-                    <div class="team-details text-center">
-                        <div class="socials mt-20">
-                            <p>
-                                {{ __('main_page.a103') }} <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                            <!-- end team member -->
-
-                                            <div class="col-lg-3 col-4 team-wrap">
-                <div class="team-member text-center">
-                    <div class="team-img">
-                        <a href="https://www.instagram.com/itsfuture_garden/" >
-                            <img src="../../images/n2.png" alt="" class="radius-image">
-                            </a>
-                    </div>
-                    <a class="team-title"> <br><p>
-                        {{ __('main_page.a104') }}</p></a>
-                    <div class="team-details text-center">
-                        <div class="socials mt-20">
-<p>{{ __('main_page.a105') }} <br> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end team member -->
-
-                                            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                        <a href="https://technksa.com/" >
-                            <img src="../../images/n3.png" alt="" class="radius-image">
-                            </a>
-                    </div>
-                    <a class="team-title"> <br><p>
-                        {{ __('main_page.a106') }}</p></a>
-                    <div class="team-details text-center">
-                        <div class="socials mt-20">
-
-                           <p>{{ __('main_page.a107') }} <br> </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end team member -->
-
-                                            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                        <a href="https://www.instagram.com/aq_design_/?igshid=mq3c5qymj33u" >
-                            <img src="../../images/n4.png" alt="" class="radius-image">
-                            </a>
-                    </div>
-                    <a href="#url" class="team-title"> <br><p>
-                        {{ __('main_page.a108') }}</p></a>
-                    <div class="team-details text-center">
-                        <div class="socials mt-20">
-                            <p>
-                                {{ __('main_page.a109') }} <br>
-
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end team member -->
+        @foreach ($friends as $item)
 
 
             <div class="col-lg-3 col-4 team-wrap mt-lg-0">
                 <div class="team-member last text-center">
                     <div class="team-img">
-
-                        <a href="https://baleine.art/" >
-                            <img src="../../images/n6.png" alt="" class="radius-image">
+                        <a href="{{$item->url}}" >
+                            <img src="{{Voyager::image($item->image)}}" alt="" class="radius-image">
                             </a>                    </div>
                     <a class="team-title"> <br><p>
-                        {{ __('main_page.a112') }}</p></a>
+                       {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }}</p></a>
                     <div class="team-details text-center">
                         <div class="socials mt-20">
 
-                           <p>{{ __('main_page.a113') }} <br> </p>
+                           <p>{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }} <br> </p>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end team member -->
 
+            @endforeach
 
-            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                        <a href="https://mazaya.monshaat.gov.sa/" >
-                            <img src="../../images/n5.png" alt="" class="radius-image">
-                            </a>                    </div>
-                    <a class="team-title"> <br><p>
-                        {{ __('main_page.a110') }}</p></a>
-                    <div class="team-details text-center">
-                        <div class="socials mt-20">
-
-                           <p>{{ __('main_page.a111') }} <br> </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- end team member -->
 
         </div>
@@ -565,7 +393,47 @@
 
 
 
+<section id="testimonials">
+        <!--heading--->
+        <div class="testimonial-heading">
+            <span></span>
+            <h4></h4>
+        </div>
+        <!--testimonials-box-container------>
+        <div class="testimonial-box-container rt">
 
+
+@foreach ($comments as $item)
+
+            <!--BOX-4-------------->
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="{{Voyager::image($item->image)}} " />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> <p> {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }} </p></strong>
+
+                        </div>
+                    </div>
+                    <!--reviews------>
+
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p>{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</p>
+                </div>
+            </div>
+
+@endforeach
+
+        </div>
+      </section>
 
 
 
@@ -630,9 +498,6 @@ $('.Slider').slick(
                     }
                 );
 </script>
-{{-- EVENTS --}}
-@include('include.events')
-
 
 
 
@@ -645,13 +510,13 @@ $('.Slider').slick(
     --------------------------------*/
 
     #services {
-      padding:  0px 0px 90px 0px;
         background-color: #ece8e5;
     }
 
     #services .box {
-        height: 210px ;
-        width: 210px ;
+        height: 208px;
+        width: 208px;
+        margin-bottom: 34px;
       border-radius: 50% ;
       position: relative;
       overflow: hidden;
@@ -679,11 +544,13 @@ $('.Slider').slick(
     }
 
     #trtr {
-      width: 142px;
-      margin: 4px 1px 2px 10px;
-      height: auto;
-      font-size: 36px;
-      line-height: 1;
+
+            width: 142px;
+            margin: 4px 1px -30px 0px;
+            height: auto;
+            font-size: 36px;
+            line-height: 1;
+
 
     }
 
@@ -697,7 +564,7 @@ $('.Slider').slick(
 
 
     #services .box:hover .title  {
-      color: #aa805f;
+      color: #161616;
     }
 
     #services .description {
@@ -719,14 +586,160 @@ $('.Slider').slick(
 
     @media(min-width:856px){
       #services .box{
-          margin-right: 84px;
+          margin-left: 88px;
 
       }
     }
 
 
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+
   </style>
 
+
+  <!--الأسئلة الشائعة  -->
+
+
+  <section class="w3l-clients py-5 mb-5 mt-4" id="ques">
+      <div class="container py-md-5 py-4 HomePageTestimonials">
+          <div class="title-main text-center mx-auto mb-5" style="max-width:600px;">
+              <p class="mt-2">    {{ __('main_page.a147') }}</p>
+
+          </div>
+          <div id="owl-demo2" class="owl-carousel  owl-theme mt-4 py-md-2 mb-md-4">
+
+
+
+              @foreach ($questions as $item)
+              <div class="item rt">
+                  <div class="testimonial-content">
+                      <div class="testimonial">
+                              <h4>   {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }} <br></h4>
+                              <p>    {{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</p>
+
+                      </div>
+
+                  </div>
+              </div>
+              @endforeach
+
+
+          </div>
+      </div>
+  </section>
 
 
 @endsection

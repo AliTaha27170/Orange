@@ -20,14 +20,15 @@
     <h3 id="Website_Name" class="mb-4">سند</h3>
     </div>
   </div>
-  <form action="#" class="signin-form">
+  <form action="{{ route('voyager.login') }}" method="POST" class="signin-form">
+    {{ csrf_field() }}
   <div class="form-group mb-3">
-  <label class="label" for="name">اسم المستخدم</label>
-  <input type="text" class="form-control" placeholder="اسم المستخدم" required>
+  <label class="label" for="name">{{ __('voyager::generic.email') }}</label>
+  <input type="email"  name="email"   class="form-control" placeholder="{{ __('voyager::generic.email') }}" required>
   </div>
   <div class="form-group mb-3">
   <label class="label" for="password">كلمة السر</label>
-  <input type="password" class="form-control" placeholder="كلمة السر" required>
+  <input type="password" class="form-control" placeholder="كلمة السر"  name="password" required>
   </div>
   <div class="form-group">
   <button type="submit" class="form-control btn btn-primary rounded submit px-3">تسجيل الدخول</button>
@@ -35,16 +36,25 @@
   <div class="form-group d-md-flex">
   <div class="w-50 text-left">
   <label class="checkbox-wrap checkbox-primary mb-0">تذكرني
-  <input type="checkbox" checked>
+  <input type="checkbox" name="remember" checked>
   <span class="checkmark"></span>
   </label>
   </div>
   <div class="w-100 text-md-right" id="Forgot_Password">
-  <a href="#">نسيت كلمة السر؟</a>
+  <a href="{{ route('forget.password.get') }}">نسيت كلمة السر؟</a>
   </div>
   </div>
   </form>
-  <p class="text-center">لا تمتلك حساب ؟ <a data-toggle="tab" href="#signup"> سجّل الآن </a></p>
+  <p class="text-center">لا تمتلك حساب ؟ <a data-toggle="tab"href="{{ route('Register') }}"> سجّل الآن </a></p>
+  @if(!$errors->isEmpty())
+  <div class="alert alert-red">
+      <ul class="list-unstyled">
+          @foreach($errors->all() as $err)
+              <li>{{ $err }}</li>
+          @endforeach
+      </ul>
+  </div>
+@endif
   </div>
   </div>
   </div>
@@ -79,7 +89,7 @@ body {
   line-height: 1.8;
   font-weight: normal;
   background: #f8f9fd;
-  color: gray; 
+  color: gray;
   background: url(https://sand.business/assets_sand/images/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -142,7 +152,7 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 767.98px) {
   .wrap .img {
-    height: 250px; } 
+    height: 250px; }
   #Forgot_Password
   {
     text-align: center;
@@ -167,7 +177,7 @@ h1, h2, h3, h4, h5,
     color: #000;
     font-weight: 700;
     font-family: 'JF Flat';
-    float: right; 
+    float: right;
   }
   .form-group a {
     color: gray; }
@@ -214,7 +224,7 @@ h1, h2, h3, h4, h5,
     font-size: 16px;
     margin-right: 5px;
     border-radius: 50%; }
-    .social-media .social-icon span {
+0    .social-media .social-icon span {
       color: #999999; }
     .social-media .social-icon:hover, .social-media .social-icon:focus {
       background: #FF6700; }

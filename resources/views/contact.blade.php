@@ -5,7 +5,11 @@
 
 <div class="contact-form-sec pt-5 mt-md-5 ContactPageForm rt">
               <div class="title-heading-w3 text-center mx-auto mb-5" style="max-width:600px">
-                  <h3 class="title-style">{{ __('main_page.we')}}<span>{{ __('main_page.questions')}}</span></h3>
+                  <h3 class="title-style"><span> <p>{{ __('main_page.ns3d')}}</p></span>              </h3>
+<p>
+    {{ __('main_page.fdln') }}
+
+</p>
               </div>
 
 
@@ -37,7 +41,7 @@
         <center>
             <p>
 
-              {!! session('msg') !!}
+            {{ __('main_page.tm_alaersal') }}
 
             </p>
 

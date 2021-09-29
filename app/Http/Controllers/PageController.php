@@ -6,9 +6,13 @@ use App\Contact;
 use App\Email;
 use App\Event;
 use App\InSand;
+use App\Models\Comment;
+use App\Models\Friend;
 use App\Models\Light;
+use App\Models\Question;
 use App\Models\systing;
 use App\Models\User;
+use App\Models\Visit;
 use App\Pakage;
 use Mail;
 use Composer\Package\Package;
@@ -19,16 +23,24 @@ class PageController extends Controller
 
 // START index >>>>>>>
     public function index () {
-        $events = Event::where('home_page', 1 )->paginate(50);
-        $lights = Light::where('home_page', 1 )->paginate(50);
-        $in_sand = InSand::get();
-        $mzaya = systing::find(1)->mzaya;
+        $events    = Event::where('home_page', 1 )->paginate(50);
+        $lights    = Light::where('home_page', 1 )->paginate(50);
+        $in_sand   = InSand::get();
+        $questions = Question::get();
+        $comments  = Comment::get();
+        $friends   = Friend::get();
+        $visits    = Visit::get();
+        $mzaya     = systing::find(1)->mzaya;
 
               return view('index')->with([
-            "events"  => $events ,
-            "lights"  => $lights ,
-            "in_sand" => $in_sand ,
-            "mzaya"   => $mzaya ,
+            "events"      => $events ,
+            "lights"      => $lights ,
+            "in_sand"     => $in_sand ,
+            "mzaya"       => $mzaya ,
+            "questions"   => $questions ,
+            "visits"   => $visits ,
+            "friends"   => $friends ,
+            "comments"   => $comments ,
         ]);
     }
 // END index >>>>>>>

@@ -24,7 +24,9 @@
                     <img class="img-fluid"   src="{{Voyager::image($light->image)}}"  width="175px" alt=" ">
                     <h4><a href="{{ $light->url }}"  class="title-head">
                         {{ $light['title_'.LaravelLocalization::getCurrentLocale()] }}</a></h4>
-                        {{ $light['description_'.LaravelLocalization::getCurrentLocale()]}}
+                        <p>
+                            {{ $light['description_'.LaravelLocalization::getCurrentLocale()]}}
+                        </p>
                 </div>
             </div>
             @endforeach

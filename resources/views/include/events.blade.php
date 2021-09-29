@@ -57,10 +57,19 @@
                             {{ $event['description_'.LaravelLocalization::getCurrentLocale()]}}
                            </h4>
 
+                           @if ($event->finish)
+
+                           <div class="blog-bottom-info">
+                            <p  class="btn btn-style" style="color:#fff;background: rgb(72, 72, 72)">
+                               {{ __('main_page.a152') }}</p>
+                        </div>
+
+                           @else
                         <div class="blog-bottom-info">
                             <a href="{{ $event->url }}" class="btn btn-style">
                                {{ __('main_page.a152') }}</a>
                         </div>
+                        @endif
 
                     </div>
                 </div>
