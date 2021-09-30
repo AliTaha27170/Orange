@@ -5053,6 +5053,13 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
+@media (max-width: 992px) {
+  .mobile-position {
+    position: absolute;
+    right: 30px;
+    top: 7px;
+  }
+}
 
 .card {
   position: relative;
