@@ -535,18 +535,15 @@ h6 {
 }
 
 #services .box {
-    height: 210px ;
-    width: 210px ;
-  border-radius: 50% ;
-  position: relative;
-  overflow: hidden;
-  border-radius: 300px;
-    /*margin: 0 10px 40px 10px;*/
-  box-shadow: 0 10px 29px 0 rgba(25, 64, 82, 0.1);
-  margin: 30px 60px 0px 60px;
-  background: #ece8e5;
-  transition: all 0.3s ease-in-out;
+  color: var(--primary-color);
+  font-size: 32px;
+  margin: 0 auto 25px auto;
+  height: 160px;
+  line-height: 80px;
+  border-radius: 50%;
   text-align: center;
+  background: #fff;
+  box-shadow: -3px 7px 10px 5px rgb(0 0 0 / 20%);
 }
 
 #services .box:hover {

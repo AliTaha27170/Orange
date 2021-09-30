@@ -139,7 +139,7 @@
                 </h3>
                 <h3 class="title-style">{{ $item['title_'.LaravelLocalization::getCurrentLocale()] }}</h3>
                 <p class="ab-text mt-4 pt-lg-2"></p>
-                <p class="mt-4">{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</p>
+                <p class="mt-4" id="description_of_visits">{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</p>
            </div>
         </div>
     </div>
@@ -514,18 +514,15 @@ $('.Slider').slick(
     }
 
     #services .box {
-        height: 208px;
-        width: 208px;
-        margin-bottom: 34px;
-      border-radius: 50% ;
-      position: relative;
-      overflow: hidden;
-      border-radius: 300px;
-        /*margin: 0 10px 40px 10px;*/
-      box-shadow: 0 20px 29px 0 rgba(25, 64, 82, 0.1);
-      background: #ece8e5;
-      transition: all 0.3s ease-in-out;
-      text-align: center;
+        color: var(--primary-color);
+    font-size: 32px;
+    margin: 0 auto 25px auto;
+    height: 160px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    box-shadow: -3px 7px 10px 5px rgb(0 0 0 / 20%);
     }
 
     #services .box:hover {
@@ -578,7 +575,7 @@ $('.Slider').slick(
 
     @media(max-width:856px){
       #services .box{
-       width: 150px !important;
+       width: 160px !important;
       }
     }
 
@@ -586,7 +583,7 @@ $('.Slider').slick(
 
     @media(min-width:856px){
       #services .box{
-          margin-left: 88px;
+          width: 160px;
 
       }
     }

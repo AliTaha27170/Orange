@@ -12576,7 +12576,7 @@ h3.title-main:after {
 
 /* about section */
 h3.title-style {
-  font-size: 46px;
+  font-size: 26px;
   line-height: 56px;
   font-weight: 500;
 }
@@ -12602,7 +12602,9 @@ p.ab-text {
   font-weight: 500;
   color: var(--heading-color);
 }
-
+#description_of_visits{
+  font-size : 20px ;
+}
 img.img-fluid.img-dark-color {
   background: #fff;
   padding: 0 10px;
@@ -12610,7 +12612,7 @@ img.img-fluid.img-dark-color {
 
 @media (max-width: 1120px) {
   h3.title-style {
-    font-size: 40px;
+    font-size: 26px;
     line-height: 50px;
   }
 }
@@ -12681,7 +12683,6 @@ img.img-fluid.img-dark-color {
 
 .w3l-bottom-grids-6 .area-box img {
   border-radius: 50%;
-  border: 12px solid #fff;
 }
 
 .w3l-bottom-grids-6 .area-box:hover {
@@ -13268,8 +13269,8 @@ section.top-content-w3l {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   margin: 5px 1px;
   background: #aaa;
   display: block;
@@ -13434,7 +13435,7 @@ div#owl-demo2 .owl-dots {
   position: absolute;
   left: 0px;
   right: 0;
-  bottom: -80px;
+  bottom: -10px;
   background: none;
 }
 

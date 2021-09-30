@@ -289,11 +289,11 @@
 }
 
 .form-card {
-    direction: rtl;
-    text-align: right;
+  direction: rtl;
+  text-align: right;
   border-radius: 2px;
   background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 1px 8px 7px 6px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
   transition: all 0.56s cubic-bezier(0.25, 0.8, 0.25, 1);
   max-width: 500px;
   padding: 0;
@@ -567,7 +567,8 @@ select.form-element-field {
 
 body {
   margin: 40px auto;
-  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  background-image: url(https://sand.business/assets_sand/images/banner.png);
+  background-attachment: fixed;
 }
 
 

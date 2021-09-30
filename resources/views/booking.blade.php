@@ -30,7 +30,7 @@
   <link href="../../../public/css/booking.css" rel="stylesheet">
 
 </head>
-<body style="background-color: #34312e">
+<body>
     <style>
         p{
             margin: 1%;
