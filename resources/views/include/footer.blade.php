@@ -90,7 +90,7 @@
 
                         <h6 class="footer-title-29 pt-2 mt-4 mb-3 "> {{ __('main_page.a146') }} </h6>
                         <a href="tel: +966 50 272 9394">
-                           <span   style="text-align: left !important;">00966-50-272-9394</span> </a>
+                           <span   style="text-align: left !important;">9394 272 50 966+</span> </a>
 
 
                     </div>

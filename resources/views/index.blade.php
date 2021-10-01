@@ -523,9 +523,11 @@ $('.Slider').slick(
     text-align: center;
     background: #fff;
     box-shadow: -3px 7px 10px 5px rgb(0 0 0 / 20%);
+    transition: 0.5s;
     }
 
     #services .box:hover {
+        cursor: pointer;
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
