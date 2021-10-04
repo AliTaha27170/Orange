@@ -583,6 +583,8 @@ mark,
 #mobile_image
 {
   display : none ;
+  position: relative;
+  top : -25px;
 }
 @media (max-width: 767px) {
   #desktop_image
