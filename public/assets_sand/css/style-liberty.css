@@ -13767,6 +13767,7 @@ li a:hover {
   color : #FF6700 !important;
 }
 .footer-29-w3l h6.footer-title-29 {
+  color : #fff ;
   font-size: 22px;
   line-height: 24px;
   margin-bottom: 30px;
@@ -13856,6 +13857,7 @@ li a:hover {
 }
 
 .w3l-copyright .copy-footer-29 {
+  text-align : center ;
   color: #777679;
 }
 
@@ -15617,7 +15619,7 @@ option
         }
         .footer-29-w3l
         {
-            background-color: #06060600;
+            background-color: #000000e0;
         }
         .area-box{
             margin-top: 35px;

@@ -102,7 +102,7 @@
         <div class="w3l-copyright">
             <div class="container">
                 <div class="row bottom-copies align-items-center">
-                    <p class="col-lg-8 CopyRights copy-footer-29">&copy; {{ date('Y') }} SAND All Rights Reserved
+                    <p class="col-lg-12 CopyRights copy-footer-29">&copy; {{ date('Y') }} SAND All Rights Reserved
                        <a href="https://w3layouts.com/">
                              </a>
                     </p>
