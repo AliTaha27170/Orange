@@ -319,7 +319,17 @@ $mzaya = systing::find(1)->mzaya;
     {{-- HEADER --}}
     @include('include.header')
 
+    @if (session('msg'))
+    <br><br><br>
+    <div class="alert alert-success alert-dismissible fade show" role="alert" style="width:175px">
 
+
+        <p> {{__('main_page.thank_you')}}</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+@endif
     @yield('main')
 
 
@@ -581,6 +591,16 @@ $mzaya = systing::find(1)->mzaya;
             font-family: "JF Flat !important";
         }
 
+        .subscribe input[type="email"] {
+            background: #fff !important;
+        }
+        input[type="text"], .contact-block textarea,input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+
+            background: #fff ;
+        }
+        .search-popup{
+            background: var(--bg-color) !important;;
+        }
     </style>
 
 </body>

@@ -22,7 +22,7 @@
             <div class="col-lg-4 col-md-6 grids-feature">
                 <div class="area-box boh">
                     <img class="img-fluid"   src="{{Voyager::image($light->image)}}"  width="175px" alt=" ">
-                    <h4><a href="{{ $light->url }}"  class="title-head">
+                    <h4><a href="{{ $light->url }}"  class="title-head" target="_blank">
                         {{ $light['title_'.LaravelLocalization::getCurrentLocale()] }}</a></h4>
                         <p>
                             {{ $light['description_'.LaravelLocalization::getCurrentLocale()]}}

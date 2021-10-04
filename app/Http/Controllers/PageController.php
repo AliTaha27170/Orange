@@ -122,7 +122,7 @@ public function register_now_post()
            ('اشتراك جديد بباقة مجتمع سند');
         $message->from('admin@sand.business','Sand');
      });
-    return back()->with(["msg" => "سعداء بانضمامك الينا " ]);
+    return back()->with(["msg" => __('main_page.s3daa')]);
 
 }
 // END register_now
@@ -159,7 +159,7 @@ Mail::send('email.email', $data, function($message) use ($data) {
     $message->from('admin@sand.business','Sand');
  });
 
-   return back()->with(["msg" => "تم استلام رسالتك  " ]);
+   return back()->with(["msg" => __('main_page.tm') ]);
 
 
 }

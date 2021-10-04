@@ -38,7 +38,7 @@ Route::group([
     Route::get('register' , [AuthController::class , 'RegisterShow' ])->name('Register');
     Route::get('login' ,function ()
     {
-        return redirect(route('voyager.login'));
+        return view('auth.login');
     })->name('login');
 
 

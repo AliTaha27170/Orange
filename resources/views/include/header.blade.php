@@ -18,8 +18,8 @@
 
 
                 @else
-                    <a href="{{ route('voyager.login') }}"> <small class="fo"
-                            style="font-size: 18px">{{ __('main_page.a162') }}</small> </a>
+                    <a href="{{ route('login') }}"> <small class="fo"
+                            style="font-size: 18px">{{ __('main_page.a148') }}</small> </a>
                 @endif
             </h1>
 
@@ -57,7 +57,20 @@
                             href="{{ route('events') }}" class="nav-link"></a></li>
                     <li id="menu-item-24"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"><a
-                            href="#ques" class="nav-link">{{ __('main_page.a4') }}</a></li>
+                            href="../../../#ques" class="nav-link">{{ __('main_page.a4') }}</a></li>
+
+
+                            <li id="menu-item-24"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"><a
+                            href="../../#_" class="nav-link">{{ __('main_page.a8') }}</a></li>
+
+
+
+                                <li id="menu-item-24"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"><a
+                                href="{{route('events')}}" class="nav-link"> {{ __('main_page.a9') }}</a></li>
+
+
                     <li id="menu-item-24"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item"><a
                             href="{{ route('contact') }}" class="nav-link">{{ __('main_page.a5') }}</a></li>

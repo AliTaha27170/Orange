@@ -5,7 +5,7 @@
                 <p class="mt-2"> </p>
                 <h3 class="title-style"> <span>{{ __('main_page.a153') }}</span> </h3>
             </div>
-            <div class="row rt" >
+            <div class="row rt justify-content-center" >
                 @foreach ($events as $event)
 
 

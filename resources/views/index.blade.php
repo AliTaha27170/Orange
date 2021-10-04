@@ -15,16 +15,6 @@
     <div class="banner-content">
         <div class="container pt-5 pb-md-4 HomePageBanner">
 
-            @if (session('msg'))
-
-            <div class="alert alert-success alert-dismissible fade show" role="alert" style="width:175px">
-                <p> {{__('main_page.thank_you')}}</p>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-@endif
-
 
 
             <div class="row align-items-center">
@@ -254,6 +244,11 @@
             margin: 6px auto;
 
         }
+
+        .success , .testimonial-box{
+            background: var(--bg-color) !important;
+
+        }
         .w3l-content-sec {
             background: #171717;
             background-size: cover;
@@ -365,54 +360,37 @@
     <div class="container py-md-5 py-4 AboutPageTeam">
         <div class="title-main text-center mx-auto mb-5" style="max-width:600px;">
             <p class="mt-2 text-white"></p>
-            <h3 class="title-style "> {{ __('main_page.a101') }}   <br>   <br>             </h3>
+            <h3 class="title-style "> {{ __('main_page.a101') }}   <br>             </h3>
         </div>
-        <div class="row team-row mt-md-5 mt-4 justify-content-center">
-        @foreach ($friends as $item)
 
-
-            <div class="col-lg-3 col-4 team-wrap mt-lg-0">
-                <div class="team-member last text-center">
-                    <div class="team-img">
-                        <a href="{{$item->url}}" >
-                            <img src="{{Voyager::image($item->image)}}" alt="" class="radius-image">
-                            </a>                    </div>
-                    <a class="team-title"> <br><p>
-                       {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }}</p></a>
-                    <div class="team-details text-center">
-                        <div class="socials mt-20">
-
-                           <p>{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }} <br> </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            @endforeach
             <!-- شركاء النجاح جديد -->
 <div class="container">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 justify-content-center">
+            @foreach ($friends as $item)
             <div class="col">
                 <div class="success h-100">
-                    <div class="text-center">           
+                    <div class="text-center">
                         <div class="img-hover-zoom img-hover-zoom--colorize">
-                            <img class="shadow" src="https://api.awalan.com/Images/1000x300xo/691~VOM.jpg"
+                            <a href="{{$item->url}}">
+                            <img class="shadow" src="{{Voyager::image($item->image)}}"
                                 alt="Another Image zoom-on-hover effect">
+                            </a>
                         </div>
-                    </div>          
+                    </div>
                     <div class="success-body">
                         <div class="clearfix mb-3">
                         </div>
                         <div class="my-2 text-center">
-                            <h1>Vom - فوم</h1>
+                            <h1> {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }}</h1>
                         </div>
                         <div class="mb-3">
-                            <h2 class="text-uppercase text-center role">الوصف</h2>
+                            <h2 class="text-uppercase text-center role">{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</h2>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
+
         </div>
     </div>
 <!-- شركاء النجاح جديد -->
@@ -449,7 +427,7 @@
                         </div>
                         <!--name-and-username-->
                         <div class="name-user">
-                            <strong> <p> {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }} </p></strong>
+                            <strong> <h4> {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }} </h4></strong>
 
                         </div>
                     </div>
@@ -458,7 +436,7 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <p>{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</p>
+                    <h6>{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</h6>
                 </div>
             </div>
 
@@ -489,7 +467,7 @@
 
 
 
-           
+
 <!-- //HomePage Cover Grids Section -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
