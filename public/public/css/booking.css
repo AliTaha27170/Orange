@@ -569,6 +569,7 @@ body {
   margin: 40px auto;
   background-image: url(https://sand.business/assets_sand/images/banner.png);
   background-attachment: fixed;
+  background-size: cover;
 }
 
 

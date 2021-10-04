@@ -29,6 +29,12 @@
 
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-6 pt-md-0 pt-4 rt">
+                    <!-- mobile image -->
+                    <div id="mobile_image" class="col-md-6 banner-right mt-lg-4 mt-0 text-right offset-lg-1">
+                    <img class="img-fluid" src="../../../../../../../../../../../../../assets_sand/images/banner2.png" alt=" ">
+                    </div>
+
+                    <!-- mobile image -->
                     <h3 class="mb-sm-4 mb-3 title rt">{{ __('main_page.a115') }}
                         <span class="d-block d-block-res"><span class="type-js">
                                 <h5>{{ __('main_page.a144') }} </h5></span></span>
@@ -48,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 banner-right mt-lg-4 mt-0 text-right offset-lg-1">
-                    <img class="img-fluid" src="../../../../../../../../../../../../../assets_sand/images/banner2.png" alt=" ">
+                    <img id="desktop_image" class="img-fluid" src="../../../../../../../../../../../../../assets_sand/images/banner2.png" alt=" ">
                 </div>
             </div>
         </div>
@@ -245,7 +251,7 @@
 <section class="w3l-content-sec py-5">
     <style>
         .btn-style{
-            margin: 6px;
+            margin: 6px auto;
 
         }
         .w3l-content-sec {
@@ -292,7 +298,7 @@
 <section class="top-content-w3l" id="_">
     <div class="row mx-0">
 
-        <div class="col-md-3 col-sm-4 col-6 offset-md-3">
+        <div class="col-md-3 col-sm-4 col-12 offset-md-3">
             <div class="grid-content-spe HomePageCoverGrids">
                 <img src="../../../../../assets_sand/images/a1.png"
                     class="img-fluid" alt="" />
@@ -307,7 +313,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-sm-4 col-6">
+        <div class="col-md-3 col-sm-4 col-12">
             <div class="grid-content-spe">
                 <img src="../../../../../assets_sand/images/a2.png"
                     class="img-fluid" alt="" />
@@ -323,7 +329,7 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-sm-4 col-6 mt-sm-0 mt-4">
+        <div class="col-md-3 col-sm-4 col-12 mt-sm-0 mt-4">
             <div class="grid-content-spe">
                 <img src="../../../../../assets_sand/images/a3.png"
                     class="img-fluid" alt="" />
@@ -384,6 +390,32 @@
             </div>
 
             @endforeach
+            <!-- شركاء النجاح جديد -->
+<div class="container">
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="success h-100">
+                    <div class="text-center">           
+                        <div class="img-hover-zoom img-hover-zoom--colorize">
+                            <img class="shadow" src="https://api.awalan.com/Images/1000x300xo/691~VOM.jpg"
+                                alt="Another Image zoom-on-hover effect">
+                        </div>
+                    </div>          
+                    <div class="success-body">
+                        <div class="clearfix mb-3">
+                        </div>
+                        <div class="my-2 text-center">
+                            <h1>Vom - فوم</h1>
+                        </div>
+                        <div class="mb-3">
+                            <h2 class="text-uppercase text-center role">الوصف</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- شركاء النجاح جديد -->
 
             <!-- end team member -->
 
@@ -452,6 +484,12 @@
 <section>
 </section>
 
+
+
+
+
+
+           
 <!-- //HomePage Cover Grids Section -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -517,7 +555,7 @@ $('.Slider').slick(
         color: var(--primary-color);
     font-size: 32px;
     margin: 0 auto 25px auto;
-    height: 160px;
+    height: 150px;
     line-height: 80px;
     border-radius: 50%;
     text-align: center;
@@ -554,11 +592,13 @@ $('.Slider').slick(
     }
 
     #services .title {
-      font-weight: 700;
-      font-size: 18px;
-          color: #000000;
-        text-decoration: none;
-        font-family: "JF Flat";
+    position: relative;
+    top: -15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "JF Flat";
     }
 
 
@@ -577,7 +617,7 @@ $('.Slider').slick(
 
     @media(max-width:856px){
       #services .box{
-       width: 160px !important;
+       width: 150px !important;
       }
     }
 
@@ -585,7 +625,7 @@ $('.Slider').slick(
 
     @media(min-width:856px){
       #services .box{
-          width: 160px;
+          width: 150px;
 
       }
     }

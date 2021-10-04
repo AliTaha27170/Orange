@@ -20,7 +20,7 @@
                                     src="{{Voyager::image($event->image)}}"
                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                     loading="lazy"
-                                    sizes="(max-width: 1680px) 100vw, 1680px" /> </div><!-- .post-thumbnail -->
+                                    sizes="(max-width: 1680px) 100vw, 1680px" style="height : auto ;" /> </div><!-- .post-thumbnail -->
 
                         </a>
 

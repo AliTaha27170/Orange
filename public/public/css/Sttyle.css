@@ -538,7 +538,7 @@ h6 {
   color: var(--primary-color);
   font-size: 32px;
   margin: 0 auto 25px auto;
-  height: 160px;
+  height: 150px;
   line-height: 80px;
   border-radius: 50%;
   text-align: center;
@@ -573,11 +573,13 @@ h6 {
 }
 
 #services .title {
+  position: relative;
+  top: -15px;
   font-weight: 700;
-  font-size: 18px;
-      color: #000000;
-    text-decoration: none;
-    font-family: "JF Flat";
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  font-family: "JF Flat";
 }
 
 
