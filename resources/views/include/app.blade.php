@@ -12,6 +12,8 @@ $mzaya = systing::find(1)->mzaya;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="سند بيئة عمل تحفز على الإبداع من خلال مساحة العمل المشتركة التي تساعد على توسع دائرة العلاقات في مجتمع ريادي فعال">
+    <link href="../../../public/img/1222.png" rel="icon">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 

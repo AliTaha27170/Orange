@@ -20,7 +20,7 @@
 
 
   <!--  Favicons -->
-  <link href="img/121.png" rel="icon">
+  <link href="img/1222.png" rel="icon">
   <link href="img/121.png" rel="apple-touch-icon">
   <script src="js/admin/admin.js"></script>
 
