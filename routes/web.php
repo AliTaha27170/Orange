@@ -117,3 +117,11 @@ Route::get('/logout', function(){
 Route::post('pachj56i8yi'  , [SystingController::class  , 'pack'])->name('pack' );
 Route::post('pachsj56i8yi'  , [SystingController::class  , 'mzaya'])->name('mzaya' );
 Route::get('tools'  , [SystingController::class, 'tools' ])->name('tools'  );
+
+
+Route::get('ddd'  ,
+function ()
+{
+   return view('email.forgetPassword')->with("token",'dsds');
+}
+)->name('gg'  );
