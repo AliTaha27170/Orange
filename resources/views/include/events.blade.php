@@ -26,8 +26,12 @@
 
                         @if ($event->finish)
 
-                        <div class="course-price-badge"><a href="{{ $event->url }}"
-                                rel="category tag"> {{ __('main_page.a151') }} </a></div>
+                        <div class="course-price-badge">
+                            <a href="{{ $event->url }}" rel="category tag"> {{ __('main_page.a151') }} </a>
+                            <div class="is-over">
+                            <div class="is-over-text">انتهى اللقاء</div>
+                            </div>
+                            </div>
                                 @endif
 
                     </div>
