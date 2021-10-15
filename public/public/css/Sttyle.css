@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 @font-face {
-  font-family: JF Flat;
+  font-family: HelveticaNeueLT Arabic 75 Bold;
   src: url(/font/font.ttf);
 }
 
@@ -11,7 +11,7 @@ body {
 
   background: #fff;
   color: #444;
-   font-family: "JF Flat";
+   font-family: "HelveticaNeueLT Arabic 75 Bold";
 
 }
 ::selection {
@@ -26,7 +26,7 @@ body {
 
 .button {
   color: #ece8e5 ;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
     height: 65px;
     width: 65px ;
     border-radius: 50%  ;
@@ -109,7 +109,7 @@ h3,
 h4,
 h5,
 h6 {
- font-family: "JF Flat";
+ font-family: "HelveticaNeueLT Arabic 75 Bold";
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -337,7 +337,7 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
-     font-family: "JF Flat";
+     font-family: "HelveticaNeueLT Arabic 75 Bold";
 }
 
 .main-nav > ul > li {
@@ -353,7 +353,7 @@ h6 {
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -407,7 +407,7 @@ h6 {
 
 .mobile-nav .drop-down > a:after {
   content: "\f078";
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
   padding-left: 10px;
   position: absolute;
   right: 15px;
@@ -479,7 +479,7 @@ h6 {
   text-align: center;
   font-weight: 800;
   position: relative;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
 }
 
 
@@ -513,7 +513,7 @@ h6 {
   padding-bottom: 90px;
   color: #ff6700;
   width: 38%;
-    font-family: "JF Flat";
+    font-family: "HelveticaNeueLT Arabic 75 Bold";
 }
 
 /* Section with background
@@ -579,7 +579,7 @@ h6 {
   font-size: 14px;
   color: #000000;
   text-decoration: none;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
 }
 
 
@@ -668,7 +668,7 @@ h6 {
 }
 
 #team .member h4 {
-    font-family: "JF Flat";
+    font-family: "HelveticaNeueLT Arabic 75 Bold";
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 15px;
@@ -676,7 +676,7 @@ h6 {
 }
 
 #team .member span {
-    font-family: "JF Flat";
+    font-family: "HelveticaNeueLT Arabic 75 Bold";
   display: block;
   font-size: 11px;
   color: #ece8e5;
@@ -750,7 +750,7 @@ h6 {
 
 #team .mem h4 {
     padding: 20px ;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 16px;
@@ -759,7 +759,7 @@ h6 {
 }
 
 #team .mem span {
-    font-family: "JF Flat";
+    font-family: "HelveticaNeueLT Arabic 75 Bold";
   display: block;
   font-size: 12px;
   color: #000000;
@@ -845,7 +845,7 @@ h6 {
   padding: 22px 0;
   display: block;
   position: relative;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
   font-size: 200px;
   line-height: 1;
   font-weight: 400;
@@ -884,7 +884,7 @@ h6 {
   color: #fff;
   font-size: 13px;
   position: relative;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
 }
 
 #footer::before {
@@ -910,14 +910,14 @@ h6 {
   font-weight: 600;
   color: #fff;
   position: relative;
-  font-family: "JF Flat";
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 #footer .footer-top p {
   font-size: 15px ;
- font-family: "JF Flat";
+ font-family: "HelveticaNeueLT Arabic 75 Bold";
   margin: 0 0 0 0;
   padding: 0;
 }
@@ -1016,7 +1016,7 @@ h6 {
   font-size: 10px;
       color: #000000;
     text-decoration: none;
-    font-family: "JF Flat";
+    font-family: "HelveticaNeueLT Arabic 75 Bold";
 }
 
 
@@ -1203,7 +1203,7 @@ h6 {
   #intro .intro-info h2 {
     font-size: 34px;
     margin-bottom: 30px;
-       font-family: "JF Flat";
+       font-family: "HelveticaNeueLT Arabic 75 Bold";
   }
 
   .section-header p {
@@ -1223,7 +1223,7 @@ h6 {
   #testimonials .testimonial-item h4,
   #testimonials .testimonial-item p {
     margin-left: 0;
-    font-family: "JF Flat";
+    font-family: "HelveticaNeueLT Arabic 75 Bold";
   }
 
 

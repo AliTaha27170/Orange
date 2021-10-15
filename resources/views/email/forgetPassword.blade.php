@@ -15,7 +15,7 @@
     @import url(//db.onlinewebfonts.com/c/7d411bb0357d6fd29347455b7d207995?family=JF+Flat);
 
       *{
-        font-family: "JF Flat";
+        font-family: "HelveticaNeueLT Arabic 75 Bold";
 
       }
     p

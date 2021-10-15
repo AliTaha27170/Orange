@@ -401,186 +401,34 @@
     </div>
 </div>
       <section id="testimonial_section">
-                      <!--BOX-4-------------->
-                      <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="#" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong> <h4> sdfsdf </h4></strong>
-
-                        </div>
+        @foreach ($comments as $item)
+         <!--BOX-4-------------->
+         <div class="testimonial-box rt">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="{{Voyager::image($item->image)}}" />
                     </div>
-                    <!--reviews------>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong> <h4> {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }} </h4></strong>
 
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <h6>sdfsdf</h6>
-                </div>
-            </div>
-
-
-                                  <!--BOX-4-------------->
-                                  <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="#" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong> <h4> sdfsdf </h4></strong>
-
-                        </div>
                     </div>
-                    <!--reviews------>
+                </div>
+                <!--reviews------>
 
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <h6>sdfsdf</h6>
-                </div>
             </div>
-
-
-                                  <!--BOX-4-------------->
-                                  <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="#" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong> <h4> sdfsdf </h4></strong>
-
-                        </div>
-                    </div>
-                    <!--reviews------>
-
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <h6>sdfsdf</h6>
-                </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <h6>{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</h6>
             </div>
+        </div>
 
+        @endforeach
 
-                                  <!--BOX-4-------------->
-                                  <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="#" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong> <h4> sdfsdf </h4></strong>
-
-                        </div>
-                    </div>
-                    <!--reviews------>
-
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <h6>sdfsdf</h6>
-                </div>
-            </div>
-
-
-                                  <!--BOX-4-------------->
-                                  <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="#" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong> <h4> sdfsdf </h4></strong>
-
-                        </div>
-                    </div>
-                    <!--reviews------>
-
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <h6>sdfsdf</h6>
-                </div>
-            </div>
-
-
-                                  <!--BOX-4-------------->
-                                  <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="#" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong> <h4> sdfsdf </h4></strong>
-
-                        </div>
-                    </div>
-                    <!--reviews------>
-
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <h6>sdfsdf</h6>
-                </div>
-            </div>
-
-
-                                  <!--BOX-4-------------->
-                                  <div class="testimonial-box">
-                <!--top------------------------->
-                <div class="box-top">
-                    <!--profile----->
-                    <div class="profile">
-                        <!--img---->
-                        <div class="profile-img">
-                            <img src="#" />
-                        </div>
-                        <!--name-and-username-->
-                        <div class="name-user">
-                            <strong> <h4> sdfsdf </h4></strong>
-
-                        </div>
-                    </div>
-                    <!--reviews------>
-
-                </div>
-                <!--Comments---------------------------------------->
-                <div class="client-comment">
-                    <h6>sdfsdf</h6>
-                </div>
-            </div>
       </section>
 
 
@@ -799,7 +647,7 @@ $('.Slider').slick(
     font-size: 14px;
     color: #000000;
     text-decoration: none;
-    font-family: "JF Flat";
+    font-family: "HelveticaNeueLT Arabic 75 Bold";
     }
 
 

@@ -81,10 +81,10 @@ div {
 }
 *
 {
-  font-family: "JF Flat", Arial, sans-serif;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", Arial, sans-serif;
 }
 body {
-  font-family: "JF Flat", Arial, sans-serif;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "JF Flat", Arial, sans-serif;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", Arial, sans-serif;
   color: #000; }
 
 .bg-primary {
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5,
     letter-spacing: 1px;
     color: #000;
     font-weight: 700;
-    font-family: 'JF Flat';
+    font-family: 'HelveticaNeueLT Arabic 75 Bold';
     float: right;
   }
   .form-group a {
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5,
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: "JF Flat", Arial, sans-serif;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", Arial, sans-serif;
 }
   .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */

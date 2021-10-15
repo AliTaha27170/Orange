@@ -24,15 +24,28 @@
 
                         </a>
 
-                        @if ($event->finish)
 
                         <div class="course-price-badge">
+                        @if ($event->finish)
+
                             <a href="{{ $event->url }}" rel="category tag"> {{ __('main_page.a151') }} </a>
-                            <div class="is-over">
-                            <div class="is-over-text">انتهى اللقاء</div>
-                            </div>
-                            </div>
                                 @endif
+
+                            @if ($event->register_stute and !$event->finish)
+
+                            <div class="is-over">
+                            <div class="is-over-text" style="background:#009688" >{{__('main_page.mta7')}}</div>
+                            </div>
+
+                            @else
+
+                            <div class="is-over">
+                            <div class="is-over-text">{{__('main_page.entha')}}</div>
+                            </div>
+
+                            @endif
+
+                            </div>
 
                     </div>
                     <div class="card-body course-details">

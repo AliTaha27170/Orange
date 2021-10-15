@@ -24,7 +24,7 @@ $mzaya = systing::find(1)->mzaya;
     <!-- google fonts -->
     <style>
         p {
-            font-family: "JF Flat !important ";
+            font-family: "HelveticaNeueLT Arabic 75 Bold !important ";
         }
 
     </style>
@@ -104,6 +104,20 @@ $mzaya = systing::find(1)->mzaya;
 
         }
 
+@else
+
+.nav-link ,   .btn-style 
+ {
+    font-size:13px !important;
+}
+#services .title {
+    font-size:11px !important;
+
+}
+.nav-fixed .navbar form.search-box input
+{
+    margin-right: 23px;
+}
         @endif
         body {
             overflow-x: hidden;
@@ -588,7 +602,7 @@ $mzaya = systing::find(1)->mzaya;
 
 
         * {
-            font-family: "JF Flat !important";
+            font-family: "HelveticaNeueLT Arabic 75 Bold !important";
         }
 
         .subscribe input[type="email"] {

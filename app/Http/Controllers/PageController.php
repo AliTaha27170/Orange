@@ -48,7 +48,7 @@ class PageController extends Controller
 // START events >>>>>
 public function events()
 {
-    $events = Event::orderBy('finish')->paginate(50);
+    $events = Event::orderBy('finish')->paginate(6);
     return view('events')->with([
         "events" => $events ,
     ]);
@@ -85,7 +85,7 @@ public function search(Request $request)
 // START Lights >>>>>
 public function lights()
 {
-    $lights = Light::orderBy('id','DESC')->paginate(50);
+    $lights = Light::orderBy('id','DESC')->paginate(6);
     return view('lights')->with([
         "lights" => $lights ,
     ]);

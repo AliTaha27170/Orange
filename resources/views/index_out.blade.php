@@ -1282,7 +1282,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
         * {
-            font-family: "JF Flat !important";
+            font-family: "HelveticaNeueLT Arabic 75 Bold !important";
         }
     </style>
 
