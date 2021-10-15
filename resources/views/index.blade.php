@@ -365,7 +365,7 @@
 
             <!-- شركاء النجاح جديد -->
 <div class="container">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 justify-content-center">
+        <div class="row success-partners">
             @foreach ($friends as $item)
             <div class="col">
                 <div class="success h-100">
@@ -400,34 +400,20 @@
         </div>
     </div>
 </div>
-
-
-
-<section id="testimonials">
-        <!--heading--->
-        <div class="testimonial-heading">
-            <span></span>
-            <h4></h4>
-        </div>
-        <!--testimonials-box-container------>
-        <div class="testimonial-box-container rt">
-
-
-@foreach ($comments as $item)
-
-            <!--BOX-4-------------->
-            <div class="testimonial-box">
+      <section id="testimonial_section">
+                      <!--BOX-4-------------->
+                      <div class="testimonial-box">
                 <!--top------------------------->
                 <div class="box-top">
                     <!--profile----->
                     <div class="profile">
                         <!--img---->
                         <div class="profile-img">
-                            <img src="{{Voyager::image($item->image)}} " />
+                            <img src="#" />
                         </div>
                         <!--name-and-username-->
                         <div class="name-user">
-                            <strong> <h4> {{ $item['title_'.LaravelLocalization::getCurrentLocale()] }} </h4></strong>
+                            <strong> <h4> sdfsdf </h4></strong>
 
                         </div>
                     </div>
@@ -436,15 +422,166 @@
                 </div>
                 <!--Comments---------------------------------------->
                 <div class="client-comment">
-                    <h6>{{ $item['description_'.LaravelLocalization::getCurrentLocale()] }}</h6>
+                    <h6>sdfsdf</h6>
                 </div>
             </div>
 
-@endforeach
 
-        </div>
+                                  <!--BOX-4-------------->
+                                  <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="#" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> <h4> sdfsdf </h4></strong>
+
+                        </div>
+                    </div>
+                    <!--reviews------>
+
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <h6>sdfsdf</h6>
+                </div>
+            </div>
+
+
+                                  <!--BOX-4-------------->
+                                  <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="#" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> <h4> sdfsdf </h4></strong>
+
+                        </div>
+                    </div>
+                    <!--reviews------>
+
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <h6>sdfsdf</h6>
+                </div>
+            </div>
+
+
+                                  <!--BOX-4-------------->
+                                  <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="#" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> <h4> sdfsdf </h4></strong>
+
+                        </div>
+                    </div>
+                    <!--reviews------>
+
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <h6>sdfsdf</h6>
+                </div>
+            </div>
+
+
+                                  <!--BOX-4-------------->
+                                  <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="#" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> <h4> sdfsdf </h4></strong>
+
+                        </div>
+                    </div>
+                    <!--reviews------>
+
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <h6>sdfsdf</h6>
+                </div>
+            </div>
+
+
+                                  <!--BOX-4-------------->
+                                  <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="#" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> <h4> sdfsdf </h4></strong>
+
+                        </div>
+                    </div>
+                    <!--reviews------>
+
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <h6>sdfsdf</h6>
+                </div>
+            </div>
+
+
+                                  <!--BOX-4-------------->
+                                  <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <div class="profile-img">
+                            <img src="#" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> <h4> sdfsdf </h4></strong>
+
+                        </div>
+                    </div>
+                    <!--reviews------>
+
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <h6>sdfsdf</h6>
+                </div>
+            </div>
       </section>
-
 
 
 
@@ -513,6 +650,92 @@ $('.Slider').slick(
                 ]
                     }
                 );
+
+
+                $('.success-partners').slick(
+                    {
+                    slidesToShow : 4 ,
+                    slidesToScroll : 4 ,
+                    dots : false ,
+                    arrows : false ,
+                    autoplay : true ,
+                    autoplayspeed : 2000 ,
+                    infinite : true ,
+                    responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                    slidesToShow : 4 ,
+                    slidesToScroll : 4 ,
+                    dots : false ,
+                    arrows : false ,
+                    autoplay : true ,
+                    autoplayspeed : 2000 ,
+                    infinite : true ,
+                    }
+                    },
+
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+                    }
+                );
+
+
+
+                $('#testimonial_section').slick(
+                    {
+                    slidesToShow : 3 ,
+                    slidesToScroll : 3 ,
+                    dots : false ,
+                    arrows : false ,
+                    autoplay : true ,
+                    autoplayspeed : 2000 ,
+                    infinite : true ,
+                    responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                    slidesToShow : 1 ,
+                    slidesToScroll : 1 ,
+                    dots : false ,
+                    arrows : false ,
+                    autoplay : true ,
+                    autoplayspeed : 2000 ,
+                    infinite : true ,
+                    }
+                    },
+
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+                    }
+                );
+
 </script>
 
 
@@ -637,8 +860,8 @@ $('.Slider').slick(
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width:100%;
+    /* flex-wrap: wrap;
+    width:100%; */
 }
 .testimonial-box{
     width:500px;

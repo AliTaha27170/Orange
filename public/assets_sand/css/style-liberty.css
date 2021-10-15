@@ -8434,7 +8434,7 @@ button.bg-dark:focus {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: -3px 7px 10px 5px rgb(0 0 0 / 20%) !important;
 }
 
 .shadow-lg {
@@ -15637,6 +15637,12 @@ option
 .success {
     background: #fff;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .img-hover-zoom--colorize img {
