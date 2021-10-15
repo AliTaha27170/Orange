@@ -15739,3 +15739,64 @@ option
 .is-over-text:before {
   left: 0;
 }
+.section-border
+{
+  border: 5px solid #ff6700;
+  border-radius: 8px;
+  padding: 50px 30px;
+}
+#twitter_section
+{
+  display : flex ;
+  align-items: center;
+  background: #ff6700;
+  padding: 75px 25px;
+}
+.twitter-div
+{
+  width : 50%;
+}
+#follow_us_Twitter
+{
+  width : 50%;
+}
+#follow_us_Twitter p
+{
+  font-size: 50px;
+  text-align: center;
+  color : #fff
+}
+#follow_us_Twitter i 
+{
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 75px;
+  margin: 50px;
+}
+@media (max-width : 975px)
+{
+  #twitter_section
+  {
+    display :block;
+    padding: 20px 25px 50px;
+  }
+  .twitter-div
+{
+  width : 100%;
+}
+#follow_us_Twitter
+{
+  width : 100%;
+  margin: 0 0 20px 0;
+}
+#follow_us_Twitter p
+{
+  font-size: 24px;
+}
+#follow_us_Twitter i 
+{
+  font-size: 50px;
+  margin: 25px;
+}
+}

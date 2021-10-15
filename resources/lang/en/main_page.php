@@ -202,5 +202,6 @@ return [
 
     'mta7' => 'Available' ,
     'entha' => 'Ended' , 
+    'followUsOnTwitter' => 'Follow us on Twitter'
 ];
 

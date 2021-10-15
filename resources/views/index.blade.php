@@ -126,7 +126,7 @@
 <!------------------------------------------------------------->
 <section class="w3l-aboutblock pt-4 pb-5">
     <div class="container pb-md-5 pb-sm-4 HPAbout">
-        <div class="row">
+        <div class="row section-border">
             <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
                 <img class="img-fluid img-responsive" src="{{Voyager::image($item->image)}}" alt=" ">
             </div>
@@ -148,6 +148,20 @@
 
 
 </div>
+<!-- Twitter section -->
+        <section id="twitter_section" >
+        <div id="follow_us_Twitter">
+        <a href="https://twitter.com/Sand_hub"><i class="fab fa-twitter"></i></a>
+        <p> {{ __('main_page.followUsOnTwitter') }} </p>
+        </div>
+        <div class="twitter-div">
+        <a class="twitter-timeline" data-height="620" href="https://twitter.com/sand_hub?s=21">Tweets by Sand_hub</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>   
+        </div>
+        </section>
+
+
+<!-- Twitter section -->
 
 
 <!-- homepage about section -->
