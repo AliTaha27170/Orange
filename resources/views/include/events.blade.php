@@ -13,7 +13,7 @@
 
                 <div class="col-md-4 mt-5 col-sm-6 rt">
                     <div class="card-header p-0 position-relative">
-                        <a href="{{ $event->url }}" class="zoom d-block">
+                        <a class="zoom d-block">
 
                             <div class="post-thumbnail">
                                 <img width="1680" height="900"
@@ -28,19 +28,19 @@
                         <div class="course-price-badge">
                         @if ($event->finish)
 
-                            <a href="{{ $event->url }}" rel="category tag"> {{ __('main_page.a151') }} </a>
+                            <a rel="category tag"> {{ __('main_page.a151') }} </a>
                                 @endif
 
                             @if ($event->register_stute and !$event->finish)
 
                             <div class="is-over">
-                            <div class="is-over-text" style="background:#009688" >{{__('main_page.mta7')}}</div>
+                            <div class="is-over-text" style="background:#484848" >{{__('main_page.mta7')}}</div>
                             </div>
 
-                            @else
+                            @elseif (!$event->finish)
 
                             <div class="is-over">
-                            <div class="is-over-text">{{__('main_page.entha')}}</div>
+                            <div class="is-over-text"  style="background:#ff6700">{{__('main_page.entha')}}</div>
                             </div>
 
                             @endif
@@ -54,7 +54,7 @@
                             <div class="meta-item course-students">
                                 <a href="#author"><span class="fas fa-user"></span>
                                     <span class="meta-value"></span> <a class="url fn n"
-                                        href="{{ $event->url }}" >{{  $event['who_'.LaravelLocalization::getCurrentLocale()] }}</a></span></a>
+                                        >{{  $event['who_'.LaravelLocalization::getCurrentLocale()] }}</a></span></a>
                             </div>
 
                             <!-- <div class="meta-item course-lesson">
@@ -68,13 +68,13 @@
                             </div>
 
                         </div>
-                        <a href="{{ $event->url }}" class="course-desc">
+                        <a class="course-desc">
                            {{ $event['title_'.LaravelLocalization::getCurrentLocale()] }} </a>
                            <h4>
                             {{ $event['description_'.LaravelLocalization::getCurrentLocale()]}}
                            </h4>
 
-                           @if ($event->finish)
+                           @if ($event->finish || !$event->register_stute)
 
                            <div class="blog-bottom-info">
                             <p  class="btn btn-style" style="color:#fff;background: rgb(72, 72, 72)">
@@ -83,7 +83,7 @@
 
                            @else
                         <div class="blog-bottom-info">
-                            <a href="{{ $event->url }}" class="btn btn-style">
+                            <a href="{{ $event->url  }}" class="btn btn-style">
                                {{ __('main_page.a152') }}</a>
                         </div>
                         @endif

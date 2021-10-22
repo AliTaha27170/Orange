@@ -2,10 +2,7 @@
 # General
 --------------------------------------------------------------*/
 
-@font-face {
-  font-family: HelveticaNeueLT Arabic 75 Bold;
-  src: url(/font/font.ttf);
-}
+@import url(//db.onlinewebfonts.com/c/5e72186f2671cdfad7e0ca56b85262ef?family=HelveticaNeueLT+Arabic+75+Bold);
 
 body {
 

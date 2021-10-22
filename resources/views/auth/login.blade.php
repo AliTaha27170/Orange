@@ -45,7 +45,7 @@
   </div>
   </div>
   </form>
-  <p class="text-center">{{ __('main_page.latmtlk') }} <a data-toggle="tab"href="{{ route('Register') }}"> {{ __('main_page.sjel') }}</a></p>
+  <p class="text-center">{{ __('main_page.latmtlk') }} <a href="{{ route('Register') }}"> {{ __('main_page.sjel') }}</a></p>
   @if(!$errors->isEmpty())
   <div class="alert alert-red">
       <ul class="list-unstyled">
