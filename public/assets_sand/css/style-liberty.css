@@ -12532,7 +12532,7 @@ h3.title-main:after {
   {
     display: block;
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -12647,7 +12647,7 @@ img.img-fluid.img-dark-color {
 
 @media (max-width: 991px) {
   .left-wthree-img img {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -15751,6 +15751,14 @@ option
   left: -26px;
   z-index: -1;
 }
+@media (max-width: 991px)
+{
+  .col-lg-6.left-wthree-img.mt-lg-0.mt-5.order-lg-first.order-last:after
+  {
+    display :none;
+  }
+
+}
 .section-border
 {
   border-radius: 8px;
@@ -15761,7 +15769,7 @@ option
   display : flex ;
   align-items: center;
   background: #ff6700;
-  padding: 75px 25px;
+  padding: 40px 25px;
 }
 .twitter-div
 {

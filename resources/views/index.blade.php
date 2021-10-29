@@ -155,7 +155,7 @@
         <p> {{ __('main_page.followUsOnTwitter') }} </p>
         </div>
         <div class="twitter-div">
-        <a class="twitter-timeline" data-height="620" href="https://twitter.com/sand_hub?s=21">Tweets by Sand_hub</a>
+        <a class="twitter-timeline" data-height="400" href="https://twitter.com/sand_hub?s=21">Tweets by Sand_hub</a>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>   
         </div>
         </section>
