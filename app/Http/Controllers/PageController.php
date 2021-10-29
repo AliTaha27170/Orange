@@ -48,7 +48,7 @@ class PageController extends Controller
 // START events >>>>>
 public function events()
 {
-    $events = Event::orderBy('finish')->paginate(6);
+    $events = Event::orderBy('finish')->paginate(20);
     return view('events')->with([
         "events" => $events ,
     ]);
@@ -65,7 +65,8 @@ public function search(Request $request)
     ->orWhere('title_en','like','%' .$request['search'].'%')
     ->orWhere('description_ar','like','%' .$request['search'].'%')
     ->orWhere('description_en','like','%' .$request['search'].'%')
-    ->orWhere('who','like','%' .$request['search'].'%')
+    ->orWhere('who_ar','like','%' .$request['search'].'%')
+    ->orWhere('who_en','like','%' .$request['search'].'%')
     ->orderBy('finish')->paginate(50);
 
     $lights = Light::where('title_ar','like','%' .$request['search'].'%')
@@ -85,7 +86,7 @@ public function search(Request $request)
 // START Lights >>>>>
 public function lights()
 {
-    $lights = Light::orderBy('id','DESC')->paginate(6);
+    $lights = Light::orderBy('id','DESC')->paginate(20);
     return view('lights')->with([
         "lights" => $lights ,
     ]);
