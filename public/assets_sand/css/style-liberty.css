@@ -15739,9 +15739,20 @@ option
 .is-over-text:before {
   left: 0;
 }
+.col-lg-6.left-wthree-img.mt-lg-0.mt-5.order-lg-first.order-last:after
+{
+  content: "";
+  position: absolute;
+  border: 6px solid #ff6700;
+  border-radius: 8px;
+  width: 80%;
+  height: 80%;
+  top: -25px;
+  left: -26px;
+  z-index: -1;
+}
 .section-border
 {
-  border: 5px solid #ff6700;
   border-radius: 8px;
   padding: 50px 30px;
 }

@@ -69,6 +69,10 @@
   <style>
 
    /*New Login*/
+   html,body
+   {
+     height : 100% ;
+   }
    #Website_Name
 {
   text-align: Right;

@@ -414,7 +414,7 @@
         </div>
     </div>
 </div>
-      <section id="testimonial_section">
+      <section id="testimonial_section" class="container">
         @foreach ($comments as $item)
          <!--BOX-4-------------->
          <div class="testimonial-box rt">
